@@ -1,1 +1,19 @@
+name: content-moderation-env
+description: AI content moderation environment
 
+tasks:
+  - easy
+  - medium
+  - hard
+
+observation_space:
+  content: string
+  sentiment: string
+  user_history_flags: int
+
+action_space:
+  label: string
+  action: string
+  confidence: float
+
+reward_range: [0.0, 1.0]
